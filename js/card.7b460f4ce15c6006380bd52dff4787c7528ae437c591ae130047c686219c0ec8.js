@@ -1,0 +1,1 @@
+(()=>{document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".image-main").forEach(e=>{let n=e.src.replace("_1.jpeg","");e.addEventListener("mouseenter",function(){e.src=n+"_2.jpeg"}),e.addEventListener("mouseleave",function(){e.src=n+"_1.jpeg"})})});})();

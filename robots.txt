@@ -1,0 +1,22 @@
+# Bloquear acceso al directorio /admin para todos los robots
+User-agent: *
+Disallow: /admin/
+
+# Permitir acceso a la página de inicio y recursos estáticos
+Allow: /$
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# No permitir acceso al directorio /private para todos los robots
+Disallow: /private/
+
+# Permitir a Googlebot rastrear todo el sitio
+User-agent: Googlebot
+Disallow:  # Sin restricción, Googlebot puede rastrear todo
+
+# Bloquear acceso a ciertas páginas específicas para todos los robots
+Disallow: /confidential-info/
+
+# Proporcionar la URL del sitemap para facilitar el rastreo
+Sitemap: https://www.orburitica.com/sitemap.xml
